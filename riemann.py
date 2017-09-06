@@ -7,7 +7,7 @@ import numpy as np
     upper_bound->u    
 """
 def Riemann (f,n,l,u):
-    width=(u-l/n)
+    width=(u-l)/n
     x_vals=np.arange(l+width,u+width,width)
     fn_values=f(x_vals)
     result=np.sum(width*fn_values)
@@ -17,7 +17,6 @@ def square(x):
     return x**2
 
 print(Riemann(square,10,0,1))
-
 
     
 
