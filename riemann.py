@@ -13,10 +13,10 @@ def Riemann (f,n,l,u):
     result=np.sum(width*fn_values)
     return result
 
-def f(x):
+def square(x):
     return x**2
 
-print Riemann(f(4),10,0,1)
+print(Riemann(square,10,0,1))
 
 
     
